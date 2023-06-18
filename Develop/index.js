@@ -1,4 +1,5 @@
 // TODO: Include packages needed for this application
+const inquirer = require('inquirer');
 
 
 // TODO: Create an array of questions for user input
@@ -117,7 +118,7 @@ const questionArray = [
                 if (questionsInput) {
                     return true;
                 } else {
-                    console.log('Please provide your Github username and your email address.'');
+                    console.log('Please provide your Github username and your email address.');
                     return false;
                 }
             }
