@@ -1,7 +1,6 @@
 // TODO: Include packages needed for this application
+const fs = require('fs');
 const inquirer = require('inquirer');
-const path = require("path");
-const fs = require("fs");
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 
@@ -103,7 +102,7 @@ const questionArray = [
         {
             type: 'input',
             name: 'tests',
-            message: 'Please provide tests for your application, and explain how they run.',
+            message: 'Please provide test packages for your application, and explain how they run.',
             validate: testsInput => {
                 if (testsInput) {
                     return true;
@@ -130,7 +129,18 @@ const questionArray = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(`./dist/${fileName}`, data, err => {
+        if (err) {
+            throw err
+        };
+        console.log('Your README has been successfully generated.')
+    });
+};
+// function to initialize program
+function init() {
+    return inquirer.prompt(questions);
+};
 
 // TODO: Create a function to initialize app
 function init() {}
