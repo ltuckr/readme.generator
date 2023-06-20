@@ -72,11 +72,17 @@ const questionsArray = [
                 }
             }
         },
+        {
+            type: 'confirm',
+            name: 'confirmLicense',
+            message: 'Do you intend to use a license?',
+            default: false
+        },
        {
             type: 'list',
             name: 'licensing',
             message: 'What license would you like to include?',
-            selections: ['mpl','mit','wtfpl', 'none'],
+            selections: ['mpl','mit','wtfpl'],
             when: ({ licensingInput }) => {
                 if (licensingInput) {
                     return true;
