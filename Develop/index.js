@@ -137,13 +137,11 @@ function writeToFile(fileName, data) {
         console.log('Your README has been successfully generated.')
     });
 };
-// function to initialize program
+// function to initialize app
 function init() {
     return inquirer.prompt(questions);
 };
 
-// TODO: Create a function to initialize app
-function init() {}
 
 // Function call to initialize app
 init();
