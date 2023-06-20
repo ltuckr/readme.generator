@@ -76,7 +76,7 @@ const questionsArray = [
             type: 'list',
             name: 'licensing',
             message: 'What license would you like to include?',
-            selections: ['gpl','artistic-2.0','wtfpl','cc','ms-pl','mit','unlicense'],
+            selections: ['mpl','mit','wtfpl', 'none'],
             when: ({ licensingInput }) => {
                 if (licensingInput) {
                     return true;
