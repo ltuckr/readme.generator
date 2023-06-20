@@ -5,7 +5,7 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 
 
 // TODO: Create an array of questions for user input
-const questionArray = [
+const questionsArray = [
 
         {
             type: 'input',
@@ -139,7 +139,7 @@ function writeToFile(fileName, data) {
 };
 // function to initialize app
 function init() {
-    return inquirer.prompt(questions);
+    return inquirer.prompt(questionsArray);
 };
 
 
