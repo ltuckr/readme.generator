@@ -144,4 +144,13 @@ function init() {
 
 
 // Function call to initialize app
-init();
+init()
+.then(userInput => {
+    return generateMarkdown(userInput);
+})
+.then(readmeInfo => {
+    return writeToFile(readmeInfo);
+})
+.catch(err => {
+    console.log(err);
+})
