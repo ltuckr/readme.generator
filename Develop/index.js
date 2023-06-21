@@ -31,19 +31,6 @@ const questionsArray = [
   },
   {
     type: 'input',
-    name: 'table',
-    message: 'Please provide your table of contents.',
-    validate: (installationTable) => {
-      if (installationTable) {
-        return true;
-      } else {
-        console.log('Please provide your table of contents.');
-        return false;
-      }
-    },
-  },
-  {
-    type: 'input',
     name: 'installation',
     message: 'What are the steps required to install your project?',
     validate: (installationInput) => {
@@ -107,15 +94,29 @@ const questionsArray = [
       }
     },
   },
+ 
   {
     type: 'input',
-    name: 'questions',
-    message: 'Please provide your Github username and your email address.',
+    name: 'github',
+    message: 'Please provide your Github username',
     validate: (questionsInput) => {
       if (questionsInput) {
         return true;
       } else {
-        console.log('Please provide your Github username and your email address.');
+        console.log('Please provide your Github username.');
+        return false;
+      }
+    },
+  },
+  {
+    type: 'input',
+    name: 'email',
+    message: 'Please provide your email address',
+    validate: (questionsInput) => {
+      if (questionsInput) {
+        return true;
+      } else {
+        console.log('Please provide your email address');
         return false;
       }
     },
