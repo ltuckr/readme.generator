@@ -124,7 +124,7 @@ const questionsArray = [
 ];
 
 function writeToFile(fileName, data) {
-  fs.writeFile(`./dist/${fileName}.md`, data, (err) => {
+  fs.writeFile(`./output/${fileName}.md`, data, (err) => {
     if (err) {
       throw err;
     }
