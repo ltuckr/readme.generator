@@ -33,12 +33,13 @@ This project is licensed under MPL.
 ## Contributing
 Source code was provided by the UNCC fullstack bootcamp curriculum. 
 
-## Tests
-N/A
+## Credits
+https://opensource.org
+https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
+https://www.w3schools.com/nodejs/nodejs_filesystem.asp
+https://github.com/connietran-dev/readme-generator
 
-## Questions
-Have questions about this project?  
-GitHub: https://github.com/ltuckr  
+ 
 
 
 
