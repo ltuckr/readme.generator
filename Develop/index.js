@@ -63,9 +63,9 @@ const questionsArray = [
   },
   {
     type: 'list',
-    name: 'licensing',
+    name: 'licenses',
     message: 'What license would you like to include?',
-    choices: ['mpl', 'mit', 'wtfpl'],
+    choices: ['MPL', 'MIT', 'WTFPL'],
     when: ({ confirmLicense }) => confirmLicense,
   },
   {
