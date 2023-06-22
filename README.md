@@ -21,6 +21,8 @@ You will need VS Code, Node.js, the cloned repo, the inquirer, fs and markdown p
 ## Screenshot
 ![README SS](https://github.com/ltuckr/readme.generator/assets/128933116/8fb89527-37e5-40b4-8f13-5b6cbed8490f)
 
+## Walkthrough Video
+https://drive.google.com/file/d/1q6-_MGcGIS8vXNXxvgGHIMVkswxIS6Lp/view
 
 ## Usage
 Open the index with node in your terminal and follow the prompts. 
