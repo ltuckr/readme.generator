@@ -37,6 +37,6 @@ N/A
 ## Questions
 Have questions about this project?  
 GitHub: https://github.com/ltuckr  
-Email: l.tucker.rdh@gmail.com
+
 
 
